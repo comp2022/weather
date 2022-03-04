@@ -1,0 +1,63 @@
+
+/* colours
+
+#172352
+#C3CBEB
+#3B59D1
+#0D1B52
+#2C439E
+*/
+
+body {
+  background-color: #C3CBEB;
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: #0D1D52;
+  overflow: hidden;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar h1 {
+  color: #C3CBEB;
+  font-weight: bold;
+  display: inline;
+}
+
+.search-bar {
+  float: right;
+}
+
+.nav-bar input {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+.nav-bar button {
+  color: #C3CBEB;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #2C439E;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-bar button:hover {
+  background-color: #172352;
+}
+
+footer {
+  color: #0D1B52;
+  position: absolute;
+  text-align: center;
+  bottom: 5rem;
+  width: 100%;
+  height: 2.5rem;
+}
