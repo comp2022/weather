@@ -37,7 +37,6 @@ body {
   margin-top: 8px;
   font-size: 17px;
   font-family: 'Hubballi', cursive;
-  height: 1rem;
 }
 
 .nav-bar button {
@@ -50,7 +49,6 @@ body {
   font-size: 17px;
   border: none;
   cursor: pointer;
-  height: 1.78rem;
 }
 
 .nav-bar button:hover {
@@ -60,11 +58,10 @@ body {
 footer {
   font-family: 'Hubballi', cursive;
   color: #0D1B52;
-  position: absolute;
   text-align: center;
-  bottom: 48px;
   width: 100%;
-  height: 2.5rem;
+  padding-bottom: 50px;
+  padding-top: 100px;
 }
 
 .info-page {
@@ -82,22 +79,37 @@ footer {
   font-size: 2rem;
 }
 
-#current {
+#weather-header {
   color: #0D1B52;
   display: block;
   font-family: 'Fredoka', sans-serif;
   font-size: 3rem;
-  margin-left: 5rem;
-  padding: 1rem 0;
+  margin: auto;
+  width: 90%;
+  padding: 5rem 0 3rem;
+}
+
+.current-weather {
+  background-color: #38498f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  width: 90%;
+  border: 3px none;
+  padding: 10px;
+  position: relative;
 }
 
 .current-weather img {
+  margin: 0 3rem;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   float: left;
   width: 300px;
   height: 300px;
   border: 3px none;
   padding: 10px;
-  margin-left: 1rem;
 }
 
 .current-weather p {
@@ -105,14 +117,33 @@ footer {
   font-family: 'Hubballi', cursive;
   font-size: 2rem;
   padding: 1px;
-  margin-left: 25rem;
+  padding-left: 22rem;
 }
 
-.current-weather{
-  background-color: #2C439E;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.card-group {
   margin: auto;
   width: 90%;
-  border: 3px none;
-  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background-color: #d5deff;
+  color: #38498f
+}
+
+.card-body {
+  font-family: 'Hubballi',
+  cursive;
+  padding: 0 10px;
+  margin-bottom: 2rem;
+}
+
+.card-body h5{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.card-body p {
+  font-size: 1.1rem;
+  margin: 0;
 }

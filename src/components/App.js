@@ -44,7 +44,7 @@ function App() {
         .then(res => res.json())
         .then(result => {
           setWeatherData(result)
-          console.log("forecast", result);
+          console.log("weather", result);
         });
     }
     fetchWeatherData().catch(console.error);
@@ -59,7 +59,7 @@ function App() {
     <div>
       <Nav handleClick={searchCity} />
       {(weatherData && loading !== true) ? (
-        [weatherData.current ?
+        [weatherData.current || weatherData.cod !== "200" ?
           <WeatherCard data={weatherData} /> :
           <ErrorPage data={weatherData} />]
 

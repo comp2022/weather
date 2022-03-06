@@ -5,16 +5,16 @@ export default function WeatherCurrent(props) {
 
     return (
         <>
-            <h1 id="current">Current Weather</h1>
+            <h1 id="weather-header">Current Weather</h1>
 
             <div class="current-weather">
                 <img src={icon} alt="icon" />
                 <div class="container">
-                    <p>City: {props.data.name}</p>
-                    <p>{props.data.weather[0].main}: it is {props.data.weather[0].description}</p>
-                    <p>Temperature: {props.data.main.temp}, but feels like {props.data.main.feels_like}</p>
-                    <p>WindSpeed: {props.data.wind.speed} m/s</p>
-                    <p>Humidity: {props.data.main.humidity} %</p>
+                    <p>{props.data.timezone}</p>
+                    <p>{props.data.current.weather[0].main}: it is {props.data.current.weather[0].description}</p>
+                    <p>Temperature: {props.data.current.temp} °C, but feels like {props.data.current.feels_like} °C</p>
+                    <p>WindSpeed: {props.data.current.wind_speed} m/s</p>
+                    <p>Humidity: {props.data.current.humidity}%</p>
                 </div>
             </div>
         </>

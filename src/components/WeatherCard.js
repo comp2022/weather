@@ -6,8 +6,8 @@ export default function WeatherCard(props) {
 
     return(
         <div>
-            {/* <WeatherCurrent data = {props.weatherData} /> */}
-            <WeatherForecast data={props.weatherData} />
+            <WeatherCurrent data={props.data} />
+            <WeatherForecast data={props.data} />
         </div>
     )
 
