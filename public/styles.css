@@ -58,19 +58,28 @@ body {
 }
 
 footer {
+  font-family: 'Hubballi', cursive;
   color: #0D1B52;
   position: absolute;
   text-align: center;
-  bottom: 5rem;
+  bottom: 48px;
   width: 100%;
   height: 2.5rem;
 }
 
-.loading-page {
+.info-page {
   font-family: 'Hubballi', cursive;
   padding: 5rem;
   text-align: center;
   color: #0D1B52;
+}
+
+.info-page h1 {
+  font-size: 4rem;
+}
+
+.info-page p{
+  font-size: 2rem;
 }
 
 #current {
@@ -101,6 +110,7 @@ footer {
 
 .current-weather{
   background-color: #2C439E;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
   width: 90%;
   border: 3px none;
