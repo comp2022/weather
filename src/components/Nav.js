@@ -11,9 +11,17 @@ function Nav(props) {
 
     return (
         <div class="nav-bar">
-            <h1><CloudIcon /> Weather</h1>
+            <h1><CloudIcon fontSize="large" /> Weather</h1>
             <div class="search-bar">
-                <input type="text" placeholder="Search city..." value={city} onChange={handleChange} />
+                <input type="text" placeholder="Search city..." value={city} 
+                    onChange={handleChange} 
+                    onKeyPress={(ev) => {
+                        if (ev.key === "Enter") {
+                            props.handleClick(city);
+                            setCity("");
+                            ev.preventDefault();
+                        }
+                    }}/>
                 <button type="submit" onClick={(event) => {
                     props.handleClick(city);
                     setCity("");

@@ -1,5 +1,4 @@
 import React from "react";
-import icon from "../images/cloudy.png";
 
 export default function WeatherCurrent(props) {
 
@@ -8,7 +7,7 @@ export default function WeatherCurrent(props) {
             <h1 id="weather-header">Current Weather</h1>
 
             <div class="current-weather">
-                <img src={icon} alt="icon" />
+                <img src={"http://openweathermap.org/img/wn/" + props.data.current.weather[0].icon + "@2x.png"} alt="icon" />
                 <div class="container">
                     <p>{props.data.timezone}</p>
                     <p>{props.data.current.weather[0].main}: it is {props.data.current.weather[0].description}</p>
