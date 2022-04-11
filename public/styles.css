@@ -1,0 +1,184 @@
+
+/* colours
+
+#172352
+#C3CBEB
+#3B59D1
+#0D1B52
+#2C439E
+*/
+
+body {
+  background-color: #C3CBEB;
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: #0D1D52;
+  height: 100px;
+  overflow: hidden;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3rem;
+  color: #C3CBEB;
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.search-bar {
+  float: right;
+}
+
+.nav-bar input {
+  padding: 6px;
+  height: 50px;
+  width: 450px;
+  border: none;
+  margin-top: 8px;
+  font-size: 2rem;
+  font-family: 'Hubballi', cursive;
+}
+
+.nav-bar button {
+  color: #C3CBEB;
+  height:50px;
+  width: 50px;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #2C439E;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-bar button:hover {
+  background-color: #172352;
+}
+
+footer {
+  font-family: 'Hubballi', cursive;
+  color: #0D1B52;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.info-page {
+  font-family: 'Hubballi', cursive;
+  padding: 5rem;
+  text-align: center;
+  color: #0D1B52;
+}
+
+.info-page h1 {
+  font-size: 4rem;
+}
+
+.info-page p{
+  font-size: 2rem;
+}
+
+#weather-header {
+  color: #0D1B52;
+  display: block;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3.5rem;
+  margin: auto;
+  width: 90%;
+  padding: 5rem 0 3rem;
+}
+
+.current-weather {
+  background-color: #38498f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 3px none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 9rem;
+}
+
+.current-weather img {
+  margin-left: 15rem;
+  width: 500px;
+  height: 500px;
+  border: 3px none;
+  padding: 10px;
+}
+
+.current-weather p {
+  color: #C3CBEB;
+  font-family: 'Hubballi', cursive;
+  font-size: 2.8rem;
+  padding: 1px;
+}
+
+.card-group {
+  margin: 0 9rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background-color: #d5deff;
+  color: #38498f
+}
+
+.card-body {
+  font-family: 'Hubballi',cursive;
+  padding: 0 10px;
+  margin-bottom: 2rem;
+}
+
+.card-body h5{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.card-body p {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 300px;
+  border: 3px none;
+}
+
+@media only screen and (max-width: 2000px) {
+  .current-weather {
+    margin: 0 4rem;
+  }
+
+  .current-weather img {
+    margin: 0 3rem;
+  }
+
+  .current-weather p {
+    font-size: 2.5rem;
+  }
+
+  .card-group {
+    margin: 0 4rem;
+  }
+
+  .card-body h5 {
+    font-size: 2.5rem;
+  }
+  .card-body p {
+    font-size: 2rem;
+  }
+  .card-img-top {
+    padding: 0;
+    height: auto;
+    width: auto;
+  }
+}
