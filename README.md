@@ -4,8 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Heroku
 
-This project is live on heroku but for some reason, it looks odd.
-https://shrouded-everglades-67237.herokuapp.com/
+This project is live on heroku: https://weather-comp22.herokuapp.com/
 
 ## Screenshots
 
